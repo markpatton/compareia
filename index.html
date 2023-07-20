@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IA Comparison</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  </head>
+  
+  <body>
+    <h1>IA Comparison</h1>
+
+    <div id="mirador"></div>
+
+    <script type="text/javascript">
+      var mirador = Mirador.viewer({
+          id: 'mirador',
+          catalog: [
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/gpl_1776012.json'},
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/gpl_2691970.json'},
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/gpl_3600433.json'},
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/gpl_5042590.json'},
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/gpl_5297457.json'},
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/wotb_6743915.json'},
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/wotb_6744009.json'},
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/wotb_7148547.json'},
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/wotb_8754434.json'},
+            {manifestId: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/wotb_9141947.json'}
+          ],
+          windows: [{loadedManifest: 'https://raw.githubusercontent.com/markpatton/compareia/main/manifests/gpl_2691970.json'}]
+      });
+    </script>
+  </body>
+</html>
